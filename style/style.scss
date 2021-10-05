@@ -33,7 +33,7 @@ $font-medium: 500;
 }
 
 body.dark-theme {
-  background-color: $dark-body-color;
+  //background-color: $dark-body-color;
   color: $dark-text-color;
   .clock {
     &__dot {
@@ -70,6 +70,25 @@ body.dark-theme {
 .dark-theme .button__theme{
   box-shadow: inset -1px -1px 1px rgba(47, 55, 52, 1),
   inset 1px 1px 1px rgba(28, 33, 31, 1);
+  background-color: $dark-body-color;
+}
+
+.cl {
+  position: absolute;
+  top: -38px;
+  right: -78px;
+  width: 20px;
+  height: 20px;
+  background-color: $dark-body-color;
+  border-radius: 50%;
+  transition: .5s all;
+  z-index: -1;
+  transform: scale(0);
+}
+
+.dark-theme .cl {
+  transform: scale(250);
+  transition: 1s all;
 }
 
 .button__theme {
@@ -84,9 +103,11 @@ body.dark-theme {
   color: $first-color;
   cursor: pointer;
   transition: .2s all;
+  background-color: $body-color;
 }
 
 body {
+  overflow: hidden;
   margin: 0;
   font-family: $font;
   background-color: $body-color;

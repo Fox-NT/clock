@@ -11,7 +11,6 @@
 }
 
 body.dark-theme {
-  background-color: #252d29;
   color: #b8c7c0;
 }
 body.dark-theme .clock__dot {
@@ -33,6 +32,25 @@ body.dark-theme .clock .text__hours, body.dark-theme .clock .text__dots, body.da
 
 .dark-theme .button__theme {
   box-shadow: inset -1px -1px 1px #2f3734, inset 1px 1px 1px #1c211f;
+  background-color: #252d29;
+}
+
+.cl {
+  position: absolute;
+  top: -38px;
+  right: -78px;
+  width: 20px;
+  height: 20px;
+  background-color: #252d29;
+  border-radius: 50%;
+  transition: 0.5s all;
+  z-index: -1;
+  transform: scale(0);
+}
+
+.dark-theme .cl {
+  transform: scale(250);
+  transition: 1s all;
 }
 
 .button__theme {
@@ -46,9 +64,11 @@ body.dark-theme .clock .text__hours, body.dark-theme .clock .text__dots, body.da
   color: #3bbf67;
   cursor: pointer;
   transition: 0.2s all;
+  background-color: #ecf3ee;
 }
 
 body {
+  overflow: hidden;
   margin: 0;
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: #ecf3ee;
