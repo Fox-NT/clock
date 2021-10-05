@@ -1,0 +1,201 @@
+/*VARIABLES*/
+/*color*/
+/*color*/
+/*Fonts*/
+/*Fonts*/
+/*VARIABLES*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body.dark-theme {
+  background-color: #252d29;
+  color: #b8c7c0;
+}
+body.dark-theme .clock__dot {
+  border: 2px solid #252d29;
+}
+body.dark-theme .clock__hours::before {
+  background-color: #b8c7c0;
+}
+body.dark-theme .clock__minutes::before {
+  background-color: #b8c7c0;
+}
+body.dark-theme .clock .text__hours, body.dark-theme .clock .text__dots, body.dark-theme .clock .text__minutes {
+  color: #f1f4f2;
+}
+
+.dark-theme .clock__circle {
+  box-shadow: 6px 6px 16px #1c211f, -6px -6px 16px #2f3734, inset -6px -6px 16px #2f3734, inset 6px 6px 12px #1c211f;
+}
+
+.dark-theme .button__theme {
+  box-shadow: inset -1px -1px 1px #2f3734, inset 1px 1px 1px #1c211f;
+}
+
+.button__theme {
+  position: absolute;
+  top: -40px;
+  right: -80px;
+  display: flex;
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: inset -1px -1px 1px white, inset 1px 1px 1px #d1e6dd;
+  color: #3bbf67;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  background-color: #ecf3ee;
+  color: #4f6456;
+  transition: 0.2s all;
+}
+
+a {
+  text-decoration: none;
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock__container {
+  height: 100vh;
+  max-width: 968px;
+  width: 100%;
+  margin: 0 auto;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.clock__content {
+  flex-direction: column;
+  position: relative;
+}
+.clock__circle {
+  transition: 0.2s all;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  box-shadow: -6px -6px 16px white, 6px 6px 16px #d1e6d8, inset 6px 6px 16px #d1e6d8, inset -6px -6px 16px white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clock__twelve, .clock__three, .clock__six, .clock__nine {
+  position: absolute;
+  width: 15px;
+  height: 1px;
+  background-color: #9bb0a2;
+}
+.clock__twelve, .clock__six {
+  transform: translateX(-50%) rotate(90deg);
+}
+.clock__twelve {
+  top: 20px;
+  left: 50%;
+}
+.clock__three {
+  top: 50%;
+  right: 10px;
+}
+.clock__six {
+  bottom: 20px;
+  left: 50%;
+}
+.clock__nine {
+  top: 50%;
+  left: 10px;
+}
+.clock__dot {
+  width: 10px;
+  height: 10px;
+  background-color: #3bbf67;
+  border-radius: 50%;
+  border: 2px solid #ecf3ee;
+  z-index: 2;
+  transition: 0.2s all;
+}
+.clock__hours, .clock__minutes, .clock__seconds {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.clock__hours {
+  width: 105px;
+  height: 105px;
+  display: flex;
+  justify-content: center;
+}
+.clock__hours::before {
+  content: "";
+  position: absolute;
+  background-color: #4f6456;
+  width: 3px;
+  height: 46px;
+  border-radius: 6px;
+  z-index: 1;
+  transition: 0.2s all;
+}
+.clock__minutes {
+  width: 136px;
+  height: 136px;
+  display: flex;
+  justify-content: center;
+}
+.clock__minutes::before {
+  content: "";
+  position: absolute;
+  background-color: #4f6456;
+  width: 3px;
+  height: 65px;
+  border-radius: 6px;
+  z-index: 1;
+  transition: 0.2s all;
+}
+.clock__seconds {
+  width: 130px;
+  height: 130px;
+  display: flex;
+  justify-content: center;
+}
+.clock__seconds::before {
+  content: "";
+  position: absolute;
+  background-color: #3bbf67;
+  width: 2px;
+  height: 76px;
+  border-radius: 6px;
+  z-index: 1;
+  transition: 0.2s all;
+}
+.clock .text {
+  display: flex;
+  justify-content: center;
+}
+.clock .text__hours, .clock .text__dots, .clock .text__minutes {
+  font-size: 48px;
+  color: #123b1f;
+  font-weight: 500;
+  transition: 0.2s all;
+}
+.clock .text__dots.off {
+  opacity: 0;
+  transition: 0.2s all;
+}
+
+/*# sourceMappingURL=style.css.map */

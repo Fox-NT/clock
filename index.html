@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9618e92078.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="clock container">
+        <div class="clock__container box">
+            <div class="clock__content box">
+                <div class="button__theme"><i class="fas fa-moon"></i></div>
+                <div class="clock__circle">
+                    <span class="clock__twelve"></span>
+                    <span class="clock__three"></span>
+                    <span class="clock__six"></span>
+                    <span class="clock__nine"></span>
+
+                    <div class="clock__dot"></div>
+                    <div class="clock__hours" id="clock-hours"></div>
+                    <div class="clock__minutes" id="clock-minutes"></div>
+                    <div class="clock__seconds" id="clock-seconds"></div>
+                </div>
+                <div class="clock__text text">
+                    <span class="text__hours" id="text-hours">--</span>
+                    <span class="text__dots">:</span>
+                    <span class="text__minutes" id="text-minutes">--</span>
+                </div>
+                <div class="clock__date">
+                    <span class="text__date week" id="date-week">-</span>
+                </div>
+                <div class="clock__date">
+                    <span class="text__date day" id="date-day">--</span>
+                    <span class="text__date month" id="date-month">--</span>
+                    <span class="text__date year" id="date-year">----</span>
+                </div>
+            </div>
+            <a class="clock__logo" href="#">FoxNT</a>
+        </div>
+    </div>
+<script src="script/main.js"></script>
+</body>
+</html>
