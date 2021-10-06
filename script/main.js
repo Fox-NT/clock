@@ -28,8 +28,8 @@ function date() {
     const month = date.getMonth();
     const year = date.getFullYear();
     console.log(date.getDay())
-    hoursText.innerHTML = hh > 10 ? hh : '0'+ hh;
-    minutesText.innerHTML = mm > 10 ? mm : '0'+ mm;
+    hoursText.innerHTML = hh >= 10 ? hh : '0'+ hh;
+    minutesText.innerHTML = mm >= 10 ? mm : '0'+ mm;
 
     weekText.innerHTML = days[week];
 
